@@ -1,0 +1,40 @@
+p {
+    color: #fff;
+}
+
+.btn-anchor {
+    all: unset;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.btn-anchor:hover {
+    all: unset;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.message-error {
+    color: var(--error-color)
+}
+
+.input-error {
+    border: 1px solid var(--error-color) !important;
+}
+
+.returnArrow-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.returnArrow{
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.returnArrow:hover{
+color: rgba(255,255,255,0.5)
+}

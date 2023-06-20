@@ -1,18 +1,18 @@
 import React from "react";
 import Nav from "../../components/Nav/Nav";
+import NavBar from "../../components/NavBar/NavBar";
+import "./GeneralLayout.css"
 
 const GeneralLayout = ({ children }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100vw",
-      }}
-    >
-      <Nav />
-      {children}
+    <div className="outer-container">
+      <div className="main-container">
+        {/* <Nav /> */}
+        <NavBar />
+        {children}
+      </div>
     </div>
+
   );
 };
 

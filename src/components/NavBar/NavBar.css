@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-container {
+    position: fixed;
+    width: 80%;
+    max-width: 1320px;
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: 1;
+    height: 80px;
+    background-image: linear-gradient( rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.navbar-logo {
+    grid-row: 1;
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    color: #e50914;
+    font-size: 1.5rem;
+}
+
+.navbar-links {
+    grid-row: 1;
+    grid-column: 2/10;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-links li {
+    margin: 0;
+    padding: 0 2rem;
+}
+
+.navbar-login {
+    grid-row: 1;
+    grid-column: 10/12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.menu-style {
+    all: unset;
+    color: #fff !important;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.menu-style:hover {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.btn-user {
+    all: unset;
+    color: #fff !important;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+.popover-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+
+}
+
+.popover-item {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.btn-logout{
+    all: unset;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-logout:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.separator-line {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+
+/* .mx-1 {
+    margin: 0 1rem;
+}
+
+.mx-2 {
+    margin: 0 2rem;
+}
+
+.mx-3 {
+    margin: 0 3rem;
+} */

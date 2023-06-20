@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Image, Navbar, Text } from "@nextui-org/react";
 import { routes } from "../../core/router/appRouter";
 
 import Links from "./Links";

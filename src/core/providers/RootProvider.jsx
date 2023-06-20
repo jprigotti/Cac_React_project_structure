@@ -1,13 +1,16 @@
-import { NextUIProvider } from "@nextui-org/react";
 import React from "react";
 import { HelmetProvider } from "react-helmet-async";
-import { darkTheme, lightTheme } from "../themes/themes";
+import AuthProvider from "../auth/providers/AuthProvider"
 
 const RootProvider = ({ children }) => {
   return (
-    <NextUIProvider theme={darkTheme}>
-      <HelmetProvider>{children}</HelmetProvider>
-    </NextUIProvider>
+    <HelmetProvider>
+      <AuthProvider>
+        {children}
+      </AuthProvider>
+
+
+    </HelmetProvider>
   );
 };
 
