@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./Banner.css"
 import useSWR from "swr"
 import { getMovieVideos } from "../../../services/tmdb.services"
-import Modal from '../../../components/modal/modal'
+import Modal from '../../../../src/components/modal/Modal.jsx';
 import { FaPlay } from "react-icons/fa";
 
 
