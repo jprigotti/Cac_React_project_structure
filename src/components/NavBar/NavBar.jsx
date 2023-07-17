@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useSearchParams } from "react-router-dom"
 import "./NavBar.css"
+import "../../utils/generalStyles.css"
 import { menus } from "./menus"
 import Popover from './Popover'
 import { FaUserAlt } from "react-icons/fa";
@@ -12,6 +13,7 @@ const NavBar = () => {
 
 
   return (
+    <div className='navbar-outer-container'>
       <div className='navbar-container'>
         <div className="navbar-logo">
           Streamberry
@@ -30,13 +32,15 @@ const NavBar = () => {
         </div>
         <div className="navbar-login">
           <button
-            className='btn-user mx-2'
+            className='btn-user'
             onClick={() => setShowPopover(!showPopover)}
           ><FaUserAlt size={20} />
           </button>
           {showPopover && <Popover />}
         </div>
       </div>
+    </div>
+
 
 
   )

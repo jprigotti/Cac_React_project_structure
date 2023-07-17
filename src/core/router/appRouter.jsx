@@ -40,7 +40,10 @@ export const appRouter = createBrowserRouter([
     path: "/auth",
     element: (
       <PublicRoutes>
+
         <LoginView />
+
+
       </PublicRoutes>
     ),
   },

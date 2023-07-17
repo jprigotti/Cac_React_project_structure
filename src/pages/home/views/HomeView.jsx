@@ -6,6 +6,7 @@ import {
 } from "../../../services/tmdb.services";
 import Carousel from "../components/Carousel";
 import Banner from "../components/Banner";
+import FormStyle1 from '../../../components/FormStyle1';
 
 const HomeView = () => {
   const [banner, setBanner] = useState(null);
@@ -29,7 +30,6 @@ const HomeView = () => {
   }, [
     popularMovies,
     popularMoviesIsLoading,
-
   ]);
 
   return (
@@ -38,9 +38,14 @@ const HomeView = () => {
         <title>Home</title>
         <meta name="description" content="Home" />
       </Helmet>
-      <Banner imageURL={banner} />
+      <Banner movie={banner} />
       {!popularMoviesIsLoading &&
-        <Carousel movies={popularMovies} />
+        <>
+          <FormStyle1.h1
+          className="my-2">Popular Movies</FormStyle1.h1>
+          <Carousel movies={popularMovies}/> 
+            </>
+
       }
 
     </div>

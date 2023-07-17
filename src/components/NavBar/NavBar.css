@@ -4,16 +4,22 @@
     padding: 0;
 }
 
+.navbar-outer-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+}
 
 .navbar-container {
-    position: fixed;
     width: 80%;
+    margin: 0 auto;
     max-width: 1320px;
     display: grid;
     grid-template-columns: repeat (12, 1fr);
     grid-template-rows: 1;
     height: 80px;
-    background-image: linear-gradient( rgba(0,0,0,1), rgba(0,0,0,0));
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .navbar-logo {
@@ -70,6 +76,7 @@
     color: #fff !important;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+    margin: 0 2rem;
 }
 
 
@@ -91,7 +98,7 @@
     text-align: center;
 }
 
-.btn-logout{
+.btn-logout {
     all: unset;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -100,7 +107,7 @@
     text-align: center;
 }
 
-.btn-logout:hover{
+.btn-logout:hover {
     color: rgba(255, 255, 255, 0.5);
 }
 

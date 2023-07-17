@@ -8,8 +8,6 @@ const RootProvider = ({ children }) => {
       <AuthProvider>
         {children}
       </AuthProvider>
-
-
     </HelmetProvider>
   );
 };

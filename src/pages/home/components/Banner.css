@@ -1,12 +1,47 @@
 .banner-container{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    top: 0;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-end;
 }
 
-.banner-container img{
-    padding: 0;
-    margin: 0;
+.banner-lower-container{
     width: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner-info-container{
+    padding: 0.5rem 1rem;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-size: 2rem;
+}
+
+.banner-action-container{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0 2rem;
+}
+
+.btn-play{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-play:hover{
+scale: 1.1;
 }
